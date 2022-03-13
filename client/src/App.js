@@ -1,15 +1,15 @@
 import './App.css';
-import './Home.css';
-import './EventNavbar.css';
-import './ProjectListVisitor.css';
-import './login.css';
-import './EventsVisitors.css'
-import './ProjectDetails.css'
-import './Dashboard.css'
-import './VolunteerForm.css'
-import './EventDetails.css'
-import './PopUpProject.css'
-import './PopUpEvent.css'
+import './css/Home.css';
+import './css/EventNavbar.css';
+import './css/ProjectListVisitor.css';
+import './css/Login.css';
+import './css/EventsVisitors.css'
+import './css/ProjectDetails.css'
+import './css/Dashboard.css'
+import './css/VolunteerForm.css'
+import './css/EventDetails.css'
+import './css/PopUpProject.css'
+import './css/PopUpEvent.css'
 import { Routes, Route } from 'react-router-dom'
 import Home from './pagesVisitor/Home'
 import Projects from './pagesVisitor/Projects'

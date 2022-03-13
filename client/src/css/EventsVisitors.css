@@ -1,5 +1,5 @@
 .events-view-background{
-    background: linear-gradient(0deg, rgba(222, 245, 19, 0.9), rgba(243, 247, 38, 0.61)), url('../public/images/rs_logo.png');
+    background: linear-gradient(0deg, rgba(222, 245, 19, 0.9), rgba(243, 247, 38, 0.61)), url('../../public/images/rs_logo.png');
     background-repeat: repeat;
     height: 100%;
     width: 100%;

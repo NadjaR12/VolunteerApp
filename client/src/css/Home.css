@@ -24,7 +24,7 @@ header {
   }
   .home-container {
     font-family: fantasy;
-    background-image: url('../public/images/ramschloss.jpg');
+    background-image: url('../../public/images/ramschloss.jpg');
     background-size: cover;
     background-position: center;
     margin: 0px;
