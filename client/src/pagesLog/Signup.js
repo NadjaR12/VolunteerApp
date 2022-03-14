@@ -21,7 +21,7 @@ export default function Signup() {
 		axios.post(`/api/auth/signup`, requestBody)
 			.then(response => {
 				
-				navigate('/login')
+				navigate('/behind-the-scences/login')
 			})
 			.catch(err => {
 				const errorDescription = err.response.data.message
@@ -87,7 +87,7 @@ export default function Signup() {
             	
 
             		<div>
-						Already have an Account?<Link to='/login'>Login</Link>
+						Already have an Account?<Link to='/behind-the-scences/login'>Login</Link>
             		</div>
 				</div>
 			</div>

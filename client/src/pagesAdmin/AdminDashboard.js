@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ProjectList from '../components/ProjectList'
 import EventList from '../components/EventList'
 import Navbar from '../components/NavBar'
@@ -8,21 +8,22 @@ export default function AdminDashboard() {
 
   return (
     <>
-        <div className='dashboard-back'>
+        <div className='dashboard-container'>
             <div>
                 <Navbar />
             </div>
-
-            <div className='dash-vol-box'>    
-                <Link className='nav-link' to={'/behind-the-scences/volunteers/fullList'}>Check the volunteers Database</Link>               
-            </div>
-
-            <div className='dash-body'>
-                <div className='dash-box'>    
-                    <ProjectList />
+            <div className='heading-admin-container'></div>
+            <div>
+                <div className='volunteer-link-container'>    
+                    <Link className='nav-link' to={'/behind-the-scences/volunteers/fullList'}>Full Volunteer Database</Link>               
                 </div>
-                <div className='dash-box'>
-                    <EventList />
+                <div>
+                    <div>    
+                        <ProjectList />
+                    </div>
+                    <div>
+                        <EventList />
+                    </div>
                 </div>
             </div>
         </div>

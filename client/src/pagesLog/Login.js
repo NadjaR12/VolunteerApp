@@ -76,7 +76,7 @@ export default function Login() {
 					{errorMessage && <h3>{errorMessage}</h3>}
 
 					<div>
-						Don't have an account?<Link to='/signup'>Signup</Link>
+						Don't have an account?<Link to='/behind-the-scences/signup'>Signup</Link>
 					</div>
 				</div>
             </div>

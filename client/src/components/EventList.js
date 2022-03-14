@@ -37,26 +37,30 @@ export default function EventList() {
     
     return(
         <>
-          <div className='dash-title-box-2'>
-            <div className='dash-titles'>
-              Events
-            </div>
+        <div>
+          <div className='dash-title-box'>
+            Events
             <div>
-              <button className='button-create' onClick={()=> setShowCreateEvent(!showCreateEvent)}>CreateEvent</button>
+              <button className='create-btn' onClick={()=> setShowCreateEvent(!showCreateEvent)}>+</button>
                 {showCreateEvent && (
-                <PopupCreateEvent refreshEvents={getAllEvents} handleClose={() => setShowCreateEvent(false)}/>
-              )}
+                  <PopupCreateEvent refreshEvents={getAllEvents} handleClose={() => setShowCreateEvent(false)}/>
+                )}
             </div>
           </div>
           <div>
+              <button className='drop-down-btn'><img className="img-arrow" src="/images/drop-down-arrow.png" alt="pfeil"></img></button>
+          </div>
+        </div>
+          <div>
             {events.map(event=>
-              <div className='dash.list' key={event._id}>
-                <h3>{event.eventName}</h3>
-                <button className='dash-edit-button' onClick={()=> {handlePopupEdit(event)}}>Edit</button>
+              <div className='dash-list-item' key={event._id}>
+                <div className='dash-list-title'>{event.eventName}</div>
+                <div className='dash-btn-container'>
+                <button  className='dash-btn' onClick={()=> {handlePopupEdit(event)}}>Edit</button>
                   {eventToEdit && <PopupEditEvent
                   handleClose={() => {setEventToEdit(null)}} thisevent={eventToEdit} refreshEvents={getAllEvents}/>
                   }
-                <button className='dash-delete-button' onClick={()=>{
+                <button  className='dash-btn' onClick={()=>{
                     axios.delete(`/api/event/${event._id}`, { headers: { Authorization: `Bearer ${storedToken}` } })
                       .then(deletedProject => {
                         console.log('deletedEvent', deletedProject)
@@ -65,8 +69,9 @@ export default function EventList() {
                         })
                       .catch(err => console.log(err))
                   }}>Delete</button>
-                  <hr className='dash-line'></hr>
-            </div>)}
+                 </div>
+            </div>
+            )}
           </div>
         </>
     )  

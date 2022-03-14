@@ -35,38 +35,46 @@ useEffect(() => {getAllProjects()}, [])
 
     return(
       <>
-          <div className='dash-title-box'>
-            <div className='dash-titles'>
+          <div>
+            <div  className='dash-title-box'>
               Projects
-            </div>
             <div>
-              <button className='button-create' onClick={() => setShowCreateProject(!showCreateProject)}>Create Project</button>
+              <button className='create-btn' onClick={() => setShowCreateProject(!showCreateProject)}>+</button>
                 {showCreateProject && (
                   <PopUpCreateProject refreshProjects={getAllProjects} handleClose={() => setShowCreateProject(false)}/>
                 )}
+            </div>
+            </div>
+            <div>
+              <button className='drop-down-btn'><img className="img-arrow" src="/images/drop-down-arrow.png" alt="pfeil"></img></button>
             </div>
           </div>
           <div>
             {projects.map(project => {
                 return (
-                <div key={project._id} className='dash.list'>
-                  <h3>{project.projectName}</h3>
-                  <button className='dash-edit-button' onClick={() => {handleProjectToBeEdited(project)}}>Edit</button>
-                    {projectToBeEdited && <PopUpEditProject
-                    handleClose={() => {setProjectToBeEdited(null)}} thisproject={projectToBeEdited} refreshProjects={getAllProjects}/>
-                    }
-                  <button className='dash-delete-button' onClick={()=>{
-                    axios.delete(`/api/projects/${project._id}`, { headers: { Authorization: `Bearer ${storedToken}` } })
+                <>
+                <div key={project._id} className='dash-list-item'>
+                  <div className='dash-list-title'>{project.projectName}</div>
+                  <div className='dash-btn-container'>
+                    <button className='dash-btn' onClick={() => {handleProjectToBeEdited(project)}}>Edit</button>
+                      {projectToBeEdited && <PopUpEditProject
+                     handleClose={() => {setProjectToBeEdited(null)}} thisproject={projectToBeEdited} refreshProjects={getAllProjects}/>
+                      }
+                    <button className='dash-btn' onClick={()=>{
+                      axios.delete(`/api/projects/${project._id}`, { headers: { Authorization: `Bearer ${storedToken}` } })
                       .then(deletedProject => {
                         console.log('deletedProject', deletedProject)
                         // get all projects to show immediately list of projects without deleted item
                         getAllProjects();
                         })
                       .catch(err => console.log(err))
-                  }}>Delete</button>
-                  <Link className='nav-link-admin' to={`/behind-the-scences/project/volunteer/${project._id}`}>See Applications</Link>
-                  <hr className='dash-line'></hr>
-                </div>
+                    }}>Delete</button>
+                  </div>
+                  </div>
+                  <div className='vol-link-container'>
+                    <Link className='vol-link-dash' to={`/behind-the-scences/project/volunteer/${project._id}`}>See Applications</Link>
+                  </div>
+                </>
                 )}
                 )}
                 

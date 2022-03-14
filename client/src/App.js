@@ -35,8 +35,8 @@ function App() {
   
   <Routes>
   {/* Authorization  */}
-    <Route path='/login' element={<Login />}/>
-    <Route path='/signup' element={<Signup />}/>
+    <Route path='/behind-the-scences/login' element={<Login />}/>
+    <Route path='/behind-the-scences/signup' element={<Signup />}/>
   {/* Visitor */}
     <Route path='/' element={<Home />}/>
     <Route path='/projects' element={<Projects />}/>

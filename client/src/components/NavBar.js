@@ -21,8 +21,8 @@ function Navbar() {
       {/*    UPDATE     */}
       {isLoggedIn && (
         <>
-          <Link to='/' className="nav-link">
-            LOG-OUT
+          <Link to='/'className="logout-link">
+            Log-out
           </Link> 
           
         </>
