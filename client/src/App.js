@@ -1,6 +1,7 @@
+import { Routes, Route } from 'react-router-dom'
 import './App.css';
 import './css/Home.css';
-import './css/EventNavbar.css';
+import './css/NavbarVisitor.css';
 import './css/ProjectListVisitor.css';
 import './css/Login.css';
 import './css/EventsVisitors.css'
@@ -10,7 +11,7 @@ import './css/VolunteerForm.css'
 import './css/EventDetails.css'
 import './css/PopUpProject.css'
 import './css/PopUpEvent.css'
-import { Routes, Route } from 'react-router-dom'
+import './css/Menu.css'
 import Home from './pagesVisitor/Home'
 import Projects from './pagesVisitor/Projects'
 import ProjectDetails from './pagesVisitor/ProjectDetails'

@@ -4,56 +4,144 @@ header {
     display: flex;
     justify-content: center;
 }
-.logo {
-    width: 30vw;
-  }
-  .icon {
-    width: 5vw;
-  }
-  .home-btn {
-    padding: 10px 30px 10px 30px; 
-    background-color: bisque;
-    border: none;
-    border-radius: 30px 0px 0px 30px;
-    text-align: center;
-  }
-  .home-link {
-    text-decoration: none;
-    color: orange;
-    font-size: 24px;
-  }
-  .home-container {
-    background-image: url('../../public/images/ramschloss.jpg');
+.home-container {
+  background-size: cover;
+  background-position: center;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 72vh;
+  width: 100vw;
+}
+.animation-container-background-img {
+  animation-name: mybackgroundchange;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+@keyframes mybackgroundchange {
+  0% {
+    background: linear-gradient(0deg, rgba(97, 150, 37, 0.507), rgba(202, 247, 38, 0.61));
     background-size: cover;
     background-position: center;
-    margin: 0px;
-    padding: 0px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
-  .logo-container {
-    margin: 0px 100px 50px 100px;
+  20% {
+    background: linear-gradient(0deg, rgba(146, 22, 125, 0.507), rgba(160, 16, 16, 0.61));
+    background-size: cover;
+    background-position: center;
   }
-  .slogan {
-    font-size: 16px;
-    color: black;
+  40% {
+    background: linear-gradient(0deg, rgba(177, 132, 9, 0.507), rgba(180, 86, 10, 0.61));
+    background-size: cover;
+    background-position: center;
   }
-  .home-btn-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-decoration: none;
+  60% {
+    background: linear-gradient(0deg, rgba(114, 6, 6, 0.507), rgba(78, 21, 7, 0.61));
+    background-size: cover;
+    background-position: center;
   }
-  .footer {
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color:  bisque;
+  80% {
+    background: linear-gradient(0deg, rgba(6, 14, 129, 0.507), rgba(22, 19, 170, 0.61));
+    background-size: cover;
+    background-position: center;
   }
-  .footer-link {
-    margin: 5px;
+  100% {
+    background: linear-gradient(0deg, rgba(97, 150, 37, 0.507), rgba(202, 247, 38, 0.61));
+    background-size: cover;
+    background-position: center;
   }
-  
+}
+.animation-container-open-menu {
+  animation-name: myslidedown;
+  animation-duration: 2s;
+}
+@keyframes myslidedown {
+  0% {
+    margin-top:0px;
+    transform: rotate(359deg);
+  }
+  50% {
+    margin-top:100px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+.animation-container {
+  animation-name: myrotation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.logo {
+    height: 20%;
+}
+/* mybounce animation lets the logo bounce from side to side */
+/* @keyframes mybounce {
+  0% {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  10% {
+    margin-left: 92vw;
+    margin-top: 20vh;
+  }
+  20% {
+    margin-left: -1vw;
+    margin-top: 40vh;
+  }
+  30% {
+    margin-left: 92vw;
+    margin-top: 0vh;
+  }
+  60% {
+    margin-left: -1vw;
+    margin-top: 50vh;
+  }
+  80% {
+    margin-left: 80vw;
+    margin-top: 60vh;
+  }
+  85% {
+    margin-left: -1vw;
+    margin-top: 50vh;
+  }
+  90% {
+    margin-left: 92vw;
+    margin-top: 50vh;
+  }
+  100% {
+    margin-left: -1vw;
+    margin-top: 0%;
+  }
+} */
+@keyframes myrotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.icon {
+  width: 3.5vw;
+}
+.footer {
+  height: 10vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color:  bisque;
+}
+.footer-link {
+  margin: 5px;
+}  

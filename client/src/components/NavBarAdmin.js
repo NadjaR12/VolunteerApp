@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";                      
 import { AuthContext } from "../context/auth";  
 
-function Navbar() {
+function NavbarVisitor() {
   // Subscribe to the AuthContext to gain access to
   // the values from AuthContext.Provider `value` prop
   const { isLoggedIn, logOutAdmin } = useContext(AuthContext);   // <== ADD
@@ -38,4 +38,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarVisitor;

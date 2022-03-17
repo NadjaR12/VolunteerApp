@@ -1,16 +1,15 @@
 import React from 'react'
 import ProjectList from '../components/ProjectList'
 import EventList from '../components/EventList'
-import Navbar from '../components/NavBar'
+import NavbarAdmin from '../components/NavBarAdmin'
 import { Link } from 'react-router-dom'
 
 export default function AdminDashboard() {
 
   return (
-    <>
         <div className='dashboard-container'>
             <div>
-                <Navbar />
+                <NavbarAdmin />
             </div>
             <div className='heading-admin-container'></div>
             <div>
@@ -27,6 +26,5 @@ export default function AdminDashboard() {
                 </div>
             </div>
         </div>
-    </>
   )
 }

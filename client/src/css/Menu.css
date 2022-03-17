@@ -1,0 +1,26 @@
+.menu-container {
+    display: flex;
+    flex-direction: column;
+}
+/* rotating links in a sun ray style around the logo */
+/* .about-rotate{
+    transform: rotate(40deg);
+    padding-right: 0px;
+}
+.gallery-rotate {
+    transform: rotate(90deg);
+    padding-right: 60px;
+}
+.music-rotate {
+    transform: rotate(310deg);
+    padding-right: 0px;
+} */
+.menu-link {
+    color: rgb(255 153 102);
+    text-decoration: none;
+}
+.menu-hr {
+    border: 0.5px solid rgba(255, 153, 102, 0.65);
+    border-radius: 20px;
+    width: 80px;
+}

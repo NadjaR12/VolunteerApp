@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectListVisitor from '../components/ProjectListVisitor'
-import EventNavbar from '../components/EventNavbar'
+import NavbarVisitor from '../components/NavbarVisitor'
 
 export default function Projects() {
 
@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <div>
       <div>
-        <EventNavbar />
+        <NavbarVisitor />
       </div>
       <div>
         <ProjectListVisitor />

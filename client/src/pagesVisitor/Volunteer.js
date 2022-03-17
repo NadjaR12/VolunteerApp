@@ -1,12 +1,12 @@
 import React from 'react'
-import EventNavbar from '../components/EventNavbar'
+import NavbarVisitor from '../components/NavbarVisitor'
 import VolunteerForm from '../components/VolunteerForm'
 
 export default function Volunteer() {
   return (
     <div>
       <div>
-        <EventNavbar />
+        <NavbarVisitor />
       </div>
       <div>
         <VolunteerForm />

@@ -1,5 +1,5 @@
 import React from "react";
-import EventNavbar from "../components/EventNavbar";
+import NavbarVisitor from "../components/NavbarVisitor";
 import DateFilterEvent from "../components/DateFilterEvent";
 import SearchBarEvent from "../components/SearchBarEvent";
 import { useState, useEffect } from "react";
@@ -76,7 +76,7 @@ export default function EventsVisitors(){
     return(
     <>
         <div>
-            <EventNavbar />
+            <NavbarVisitor />
         </div>
         <div className="events-view-background">
         <div className='heading-project-container'></div>

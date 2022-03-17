@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import EventNavbar from '../components/EventNavbar'
+import NavbarVisitor from '../components/NavbarVisitor'
 
 export default function EventDetails() {
 
@@ -22,7 +22,7 @@ export default function EventDetails() {
 	<>
 		{event === null ? <div>Loading ...</div> :
 		<>
-			<EventNavbar />
+			<NavbarVisitor />
 			<div className='bg-overlay-event-detail page-container'> 
 				<div className='heading-projectdetail-container'></div>
 				<div className='event-detail-container'>
