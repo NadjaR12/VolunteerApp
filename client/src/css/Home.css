@@ -16,10 +16,10 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  animation: backgroundchange 20s ease infinite;
+  animation: backgroundchange 60s ease infinite;
 }
 .home-overlay {
-  animation: backgroundoverlay 20s ease infinite;
+  animation: backgroundoverlay 60s ease infinite;
 }
 .logo-container {
   display: flex;
@@ -71,6 +71,7 @@ header {
     background-image: url('../../public/images/50613531_1865840476871868_9220936635779121152_o.jpg');
     /* background: linear-gradient(0deg, rgba(97, 150, 37, 0.507), rgba(202, 247, 38, 0.61)); */
   }
+}
   /*
   60% {
     background: linear-gradient(0deg, rgba(114, 6, 6, 0.507), rgba(78, 21, 7, 0.61));
@@ -81,12 +82,12 @@ header {
   100% {
     background: linear-gradient(0deg, rgba(97, 150, 37, 0.507), rgba(202, 247, 38, 0.61));
   }
-}
+}*/
 .animation-container-open-menu {
   animation-name: myslidedown;
   animation-duration: 2s;
 }
-@keyframes myslidedown {
+@keyframes myslidedown { 
   0% {
     margin-top:0px;
     transform: rotate(359deg);
@@ -96,7 +97,7 @@ header {
   }
   100% {
     margin-top: 0px;
-  } */
+  }
 }
 .animation-container {
   animation: rotation 4s linear infinite;

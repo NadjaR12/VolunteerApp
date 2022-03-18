@@ -20,7 +20,7 @@ const handleMenu = () => {
       {showMenu && (
                   <Menu />
                 )}
-        <img className={showMenu ? "logo animation-container-open-menu" : "logo animation-container"} onClick={handleMenu} src="/images/disco-ball-png-27276.png" alt="Logo"/>
+        <img className={showMenu ? "logo animation-container-open-menu" : "logo animation-container"} onClick={handleMenu} src="/images/logo_gelb.png" alt="Logo"/>
       </div>
     </div>
     <footer className="footer">
