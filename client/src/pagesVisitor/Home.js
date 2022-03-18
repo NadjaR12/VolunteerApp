@@ -11,7 +11,8 @@ const handleMenu = () => {
 }
 
   return (
-  <div className="home-container animation-container-background-img">
+  <div className="home-container">
+  <div className="home-overlay">
     <NavbarHome />
     <div className="heading-project-container"></div>
     <div>
@@ -28,6 +29,7 @@ const handleMenu = () => {
     {/* doesn't work yet */}
     {/* <a className="footer-link" href=""><img className="icon" src="/images/mail.png" alt="Logo"/></a> */}
     </footer>
+  </div>
   </div>
   )
 }

@@ -9,11 +9,17 @@ header {
   background-position: center;
   margin: 0px;
   padding: 0px;
+  position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  animation: backgroundchange 20s ease infinite;
+}
+.home-overlay {
+  animation: backgroundoverlay 20s ease infinite;
 }
 .logo-container {
   display: flex;
@@ -23,41 +29,57 @@ header {
   height: 72vh;
   width: 100vw;
 }
-.animation-container-background-img {
-  animation-name: mybackgroundchange;
-  animation-iteration-count: infinite;
-  animation-duration: 10s;
+.logo {
+  height: 20%;
 }
-@keyframes mybackgroundchange {
+/* ANIMATIONS */
+@keyframes backgroundoverlay {
   0% {
-    background: linear-gradient(0deg, rgba(97, 150, 37, 0.507), rgba(202, 247, 38, 0.61));
-    background-size: cover;
-    background-position: center;
+    background-color: rgba(0, 255, 255, 0.185);
   }
   20% {
-    background: linear-gradient(0deg, rgba(146, 22, 125, 0.507), rgba(160, 16, 16, 0.61));
-    background-size: cover;
-    background-position: center;
+    background-color: rgba(137, 43, 226, 0.384);
   }
   40% {
-    background: linear-gradient(0deg, rgba(177, 132, 9, 0.507), rgba(180, 86, 10, 0.61));
-    background-size: cover;
-    background-position: center;
+    background-color: rgba(255, 127, 80, 0.336);
   }
+  70% {
+    background-color: rgba(255, 0, 179, 0.205);
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0.185);
+  }
+}
+@keyframes backgroundchange {
+  0% {
+    background-image: url('../../public/images/50613531_1865840476871868_9220936635779121152_o.jpg');
+    /* background: linear-gradient(0deg, rgba(97, 150, 37, 0.507), rgba(202, 247, 38, 0.61)); */
+  }
+  20% {
+    background-image: url('../../public/images/50070715_1865840443538538_8312521035148689408_o.jpg');
+    /* background: linear-gradient(0deg, rgba(146, 22, 125, 0.507), rgba(160, 16, 16, 0.61)); */
+  }
+  40% {
+    background-image: url('../../public/images/38168685_10156757881729060_2945055295295979520_o.jpg');
+    /* background: linear-gradient(0deg, rgba(146, 22, 125, 0.507), rgba(160, 16, 16, 0.61)); */
+  }
+  70% {
+    background-image: url('../../public/images/login_background.jpg');
+    /* background: linear-gradient(0deg, rgba(177, 132, 9, 0.507), rgba(180, 86, 10, 0.61)); */
+  }
+  100% {
+    background-image: url('../../public/images/50613531_1865840476871868_9220936635779121152_o.jpg');
+    /* background: linear-gradient(0deg, rgba(97, 150, 37, 0.507), rgba(202, 247, 38, 0.61)); */
+  }
+  /*
   60% {
     background: linear-gradient(0deg, rgba(114, 6, 6, 0.507), rgba(78, 21, 7, 0.61));
-    background-size: cover;
-    background-position: center;
   }
   80% {
     background: linear-gradient(0deg, rgba(6, 14, 129, 0.507), rgba(22, 19, 170, 0.61));
-    background-size: cover;
-    background-position: center;
   }
   100% {
     background: linear-gradient(0deg, rgba(97, 150, 37, 0.507), rgba(202, 247, 38, 0.61));
-    background-size: cover;
-    background-position: center;
   }
 }
 .animation-container-open-menu {
@@ -74,15 +96,18 @@ header {
   }
   100% {
     margin-top: 0px;
-  }
+  } */
 }
 .animation-container {
-  animation-name: myrotation;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+  animation: rotation 4s linear infinite;
 }
-.logo {
-    height: 20%;
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 /* mybounce animation lets the logo bounce from side to side */
 /* @keyframes mybounce {
@@ -123,14 +148,6 @@ header {
     margin-top: 0%;
   }
 } */
-@keyframes myrotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
 .icon {
   width: 3.5vw;
 }
