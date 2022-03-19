@@ -12,35 +12,33 @@ const handleMenu = () => {
 
   return (
   <>
-  <div className="home-container fixed-background">
-  <div className="home-overlay fixed-background">
-    <NavbarHome />
-    <div>
+    <div className="home-container fixed-background">
+    <div className="home-overlay fixed-background">
+      <NavbarHome />
       <div className="logo-container">
         <img className={showMenu ? "logo animation-container-open-menu" : "logo animation-container"} onClick={handleMenu} src="/images/logo_gelb.png" alt="Logo"/>
         {showMenu && (
                   <Menu />
                 )}
       </div>
-  </div>
-  </div>
-  </div>
-    <div className='about-container fixed-background'>
-        <h1>/ABOUT</h1>
     </div>
-    <div>
+    </div>
+    <div className='text-section-container fixed-background'>
+      <h1>/ABOUT</h1>
+    </div>
+    <div className='scroll-background'>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dolor tempor, posuere mi id, eleifend magna. Nulla at lectus magna. Etiam sodales arcu at lectus porttitor accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur id urna dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin et pharetra justo, quis suscipit risus. Maecenas tincidunt efficitur ex in pharetra.</p>
     </div>
-    <div className='about-container fixed-background'>
+    <div className='text-section-container fixed-background'>
         <h1>/GALLERY</h1>
     </div>
-    <div>
+    <div className='scroll-background'>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dolor tempor, posuere mi id, eleifend magna. Nulla at lectus magna. Etiam sodales arcu at lectus porttitor accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur id urna dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin et pharetra justo, quis suscipit risus. Maecenas tincidunt efficitur ex in pharetra.</p>
     </div>
-    <div className='about-container fixed-background'>
+    <div className='text-section-container fixed-background'>
         <h1>/MUSIC</h1>
     </div>
-    <div>
+    <div className='scroll-background'>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dolor tempor, posuere mi id, eleifend magna. Nulla at lectus magna. Etiam sodales arcu at lectus porttitor accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur id urna dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin et pharetra justo, quis suscipit risus. Maecenas tincidunt efficitur ex in pharetra.</p>
     </div>
     <footer className="footer">

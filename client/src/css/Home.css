@@ -5,10 +5,11 @@ header {
     justify-content: center;
 }
 .fixed-background {
+  height: 100vh;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center;
-  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .home-container {
   margin: 0px;
@@ -169,7 +170,15 @@ header {
 .footer-link {
   margin: 5px;
 }
-.about-container {
-  background-color: aqua;
-  margin-bottom: 100px;
-}  
+.text-section-container {
+  background-image: url("../../public/images/Painting_Bucht.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: aqua;
+}
+.scroll-background {
+  background-color: bisque;
+  color: aqua;
+  padding: 10px;
+}
