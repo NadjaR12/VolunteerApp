@@ -4,12 +4,15 @@ header {
     display: flex;
     justify-content: center;
 }
-.home-container {
+.fixed-background {
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  height: 100%;
+}
+.home-container {
   margin: 0px;
   padding: 0px;
-  position: relative;
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -19,6 +22,7 @@ header {
   animation: backgroundchange 60s ease infinite;
 }
 .home-overlay {
+  background-attachment: fixed;
   animation: backgroundoverlay 60s ease infinite;
 }
 .logo-container {
@@ -162,4 +166,7 @@ header {
 }
 .footer-link {
   margin: 5px;
+}
+.about-container {
+  background-color: aqua;
 }  

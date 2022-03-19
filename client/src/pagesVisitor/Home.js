@@ -11,8 +11,9 @@ const handleMenu = () => {
 }
 
   return (
-  <div className="home-container">
-  <div className="home-overlay">
+  <>
+  <div className="home-container fixed-background">
+  <div className="home-overlay fixed-background">
     <NavbarHome />
     <div className="heading-project-container"></div>
     <div>
@@ -22,14 +23,33 @@ const handleMenu = () => {
                 )}
         <img className={showMenu ? "logo animation-container-open-menu" : "logo animation-container"} onClick={handleMenu} src="/images/logo_gelb.png" alt="Logo"/>
       </div>
+  </div>
+  </div>
+  </div>
+    <div className='about-container fixed-background'>
+        <h1>/ABOUT</h1>
+    </div>
+    <div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dolor tempor, posuere mi id, eleifend magna. Nulla at lectus magna. Etiam sodales arcu at lectus porttitor accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur id urna dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin et pharetra justo, quis suscipit risus. Maecenas tincidunt efficitur ex in pharetra.</p>
+    </div>
+    <div className='about-container fixed-background'>
+        <h1>/GALLERY</h1>
+    </div>
+    <div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dolor tempor, posuere mi id, eleifend magna. Nulla at lectus magna. Etiam sodales arcu at lectus porttitor accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur id urna dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin et pharetra justo, quis suscipit risus. Maecenas tincidunt efficitur ex in pharetra.</p>
+    </div>
+    <div className='about-container fixed-background'>
+        <h1>/MUSIC</h1>
+    </div>
+    <div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dolor tempor, posuere mi id, eleifend magna. Nulla at lectus magna. Etiam sodales arcu at lectus porttitor accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur id urna dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin et pharetra justo, quis suscipit risus. Maecenas tincidunt efficitur ex in pharetra.</p>
     </div>
     <footer className="footer">
       <a className="footer-link" href="https://www.facebook.com/ramschakl"><img className="icon" src="/images/fb.png" alt="Logo"/></a>
       <a className="footer-link" href="https://soundcloud.com/ramschakl" ><img className="icon" src="/images/sc.png" alt="Logo"/></a>
     {/* doesn't work yet */}
-    {/* <a className="footer-link" href=""><img className="icon" src="/images/mail.png" alt="Logo"/></a> */}
+    <a className="footer-link" href="htttps://mail.wtf"><img className="icon" src="/images/mail.png" alt="Logo"/></a>
     </footer>
-  </div>
-  </div>
+  </>
   )
 }
