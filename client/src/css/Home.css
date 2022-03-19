@@ -162,6 +162,7 @@ header {
 .footer {
   height: 10vh;
   padding: 10px;
+  margin-top:20px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -189,7 +190,7 @@ header {
 .scroll-background {
   color: white;
   padding: 60px;
-  text-align: center; 
+  text-align: center;
 }
 .scroll-bg-color-1 {
   background-color: rgb(34, 175, 180);
