@@ -6,15 +6,15 @@ export default function Menu() {
   return (
     <div className='menu-container'>
         <div className='about-rotate'>
-        <Link className="menu-link animate__animated animate__fadeInUp" to={'/about'}>ABOUT</Link>
+        <Link className="menu-link animate__animated animate__fadeInDown" to={'/about'}>ABOUT</Link>
         {/* <hr className='menu-hr animate__animated animate__fadeInUp'></hr> */}
         </div>
         <div className='gallery-rotate'>
-        <Link className='menu-link animate__animated animate__fadeInUp' to={'/gallery'}>GALLERY</Link>
+        <Link className='menu-link animate__animated animate__fadeInDown' to={'/gallery'}>GALLERY</Link>
         {/* <hr className='menu-hr animate__animated animate__fadeInUp'></hr> */}
         </div>
         <div className='music-rotate'>
-        <Link className='menu-link animate__animated animate__fadeInUp' to={'/music'}>MUSIC</Link>
+        <Link className='menu-link animate__animated animate__fadeInDown' to={'/music'}>MUSIC</Link>
         {/* <hr className='menu-hr animate__animated animate__fadeInUp'></hr> */}
         </div>
     </div>

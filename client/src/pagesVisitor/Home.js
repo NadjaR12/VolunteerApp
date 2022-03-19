@@ -15,13 +15,12 @@ const handleMenu = () => {
   <div className="home-container fixed-background">
   <div className="home-overlay fixed-background">
     <NavbarHome />
-    <div className="heading-project-container"></div>
     <div>
       <div className="logo-container">
-      {showMenu && (
+        <img className={showMenu ? "logo animation-container-open-menu" : "logo animation-container"} onClick={handleMenu} src="/images/logo_gelb.png" alt="Logo"/>
+        {showMenu && (
                   <Menu />
                 )}
-        <img className={showMenu ? "logo animation-container-open-menu" : "logo animation-container"} onClick={handleMenu} src="/images/logo_gelb.png" alt="Logo"/>
       </div>
   </div>
   </div>
