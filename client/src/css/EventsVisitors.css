@@ -1,8 +1,8 @@
-.events-view-background{
-    background: linear-gradient(0deg, rgba(222, 245, 19, 0.9), rgba(243, 247, 38, 0.61)), url('../../public/images/rs_logo.png');
+.bg-overlay-event {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(226, 26, 76, 0.918), rgba(226, 26, 119, 0.568)), url('../../public/images/mural-wallpaper.jpeg');
     background-repeat: repeat;
-    height: 100%;
-    width: 100%;
 }
 .events-view-back {
     display: flex;
@@ -36,21 +36,6 @@
     width: 150px;
     margin-bottom: 8px;
     height: 25px;
-}
-.events-view-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width:100%;
-    height: fit-content;
-    background-color: rgba(220, 220, 220, 0.575);
-    margin-left: 275px;
-    margin-right: 20px;
-    margin-bottom: 100px;
-    padding: 20px 0px 60px 0px;
-    border-radius: 20px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    color: gray;
 }
 .events-view-ind-box{
     display: flex;

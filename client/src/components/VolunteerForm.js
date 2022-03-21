@@ -64,8 +64,8 @@ export default function VolunteerForm() {
 
   return (
   <> 
-    <div className='page-container bg-overlay-volunteer'>
-    <div className='heading-volunteer-container'><h1>Become a volunteer</h1></div>
+    <div className='project-page-container bg-overlay-volunteer'>
+    <div className='heading-project-container'><h1>Become a volunteer</h1></div>
     <div className='project-container-volunteer'>
     <form className='volunteer-form' onSubmit={handleSubmit}>
             <div className='inputfield-container'>

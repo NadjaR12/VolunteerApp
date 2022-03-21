@@ -1,5 +1,5 @@
 header {
-    background-color: bisque;
+    background-color: white;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -157,7 +157,7 @@ header {
   }
 } */
 .icon {
-  width: 3.5vw;
+  width: 4vw;
 }
 .footer {
   height: 10vh;
@@ -166,7 +166,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  background-color:  bisque;
+  background-color:  white;
 }
 .footer-link {
   margin: 5px;

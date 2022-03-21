@@ -10,10 +10,8 @@
 }
 .project-detail-container {
     padding-top: 10px;
-    margin: 0px 250px;
     padding-bottom:10px;
     color: rgb(255 94 98);
-
 }
 .map-icon {
     width: 15px;
@@ -34,7 +32,6 @@
     position: relative;
 }
 .line {
-    width: 750px;
     border: 0.5px solid rgb(255 94 98);
     border-radius: 50px;
 }

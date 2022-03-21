@@ -25,8 +25,7 @@ const storedToken = localStorage.getItem('authToken')
 	{project === null ? <div>Loading ...</div> :
 	<>
 		<NavbarVisitor />
-		<div className='bg-overlay page-container'> 
-		<div className='heading-projectdetail-container'></div>
+		<div className='project-page-container bg-overlay'>
 		<div className='project-container'>
 			<h1 className='project-title'>{project.projectName}</h1>
 			<hr className='line'></hr>

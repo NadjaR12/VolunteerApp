@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectList from '../components/ProjectList'
 import EventList from '../components/EventList'
-import NavbarAdmin from '../components/NavBarAdmin'
+import NavbarAdmin from '../components/NavbarAdmin'
 import { Link } from 'react-router-dom'
 
 export default function AdminDashboard() {

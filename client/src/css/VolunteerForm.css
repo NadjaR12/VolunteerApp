@@ -1,19 +1,10 @@
 .bg-overlay-volunteer{
-    background: linear-gradient(0deg, rgba(0 121 145 /90%), rgba(120 255 214 /90%)), url('../../public/images/rs_logo.png');
+    background: linear-gradient(0deg, rgba(0, 121, 145, 0.904), rgba(120, 255, 215, 0.897)), url('../../public/images/mural-wallpaper.jpeg');
     background-repeat: repeat;
     padding-bottom: 160px;
 }
-.heading-volunteer-container {
-    width: 100vw;
-    padding-top: 19vh;
-    color: rgb(199, 90, 36);
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
-}
 .project-container-volunteer {
+    margin-top: 10%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -51,8 +42,8 @@
 }
 .label-form {
     margin-top: 30px;
-    font-size: 20px;
-    color:rgb(199, 90, 36);
+    font-size: 16px;
+    color:rgba(255, 94, 97, 0.507);
     display: flex;
     font-weight: bold;
     text-transform: uppercase;
@@ -62,7 +53,9 @@
     display: flex;
     margin-top: 5px;
     padding: 5px;
-    color: rgb(199, 90, 36);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
 }
 .checkbox {
     padding-right: 15px;
@@ -73,10 +66,13 @@
     margin-top: 30px;
     border-style: none;
     background-color: #78ffd6;
-    color:rgb(199, 90, 36);
+    color:rgba(255, 94, 97, 0.733);
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
+}
+button.btn-form:hover {
+    background-color:rgba(255, 94, 97, 0.733);
 }
 ::placeholder {
     color: #007991;

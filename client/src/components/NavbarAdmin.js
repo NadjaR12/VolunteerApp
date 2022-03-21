@@ -1,10 +1,8 @@
-// src/components/Navbar.js
-
 import { Link } from "react-router-dom";
 import { useContext } from "react";                      
 import { AuthContext } from "../context/auth";  
 
-function NavbarVisitor() {
+function NavbarAdmin() {
   // Subscribe to the AuthContext to gain access to
   // the values from AuthContext.Provider `value` prop
   const { isLoggedIn, logOutAdmin } = useContext(AuthContext);   // <== ADD
@@ -14,20 +12,13 @@ function NavbarVisitor() {
   //  depending on the user being logged in or not
   return (
     <nav>
-      <Link to="/">
-        <img className="logo-nav" src="/images/logo_gelb.png" alt="Logo"/>
-      </Link>
-
-      {/*    UPDATE     */}
+      <Link className="nav-link" to="/">HOME</Link>
       {isLoggedIn && (
         <>
-          <Link to='/'className="logout-link">
-            Log-out
-          </Link> 
-          
+        |
+        <Link to='/'className="nav-link"> LOGOUT</Link>
         </>
       )}
-
       {!isLoggedIn && (
         <>
           <Link to="/signup"> <button>Sign Up</button> </Link>
@@ -38,4 +29,4 @@ function NavbarVisitor() {
   );
 }
 
-export default NavbarVisitor;
+export default NavbarAdmin;

@@ -78,8 +78,7 @@ export default function EventsVisitors(){
         <div>
             <NavbarVisitor />
         </div>
-        <div className="events-view-background">
-        <div className='heading-project-container'></div>
+        <div className="bg-overlay-event">
         <div className="events-view-back">
             <div className="filters-box">
                 <div className="filter-title">
@@ -93,7 +92,7 @@ export default function EventsVisitors(){
                     <ToggleEvent setCheckProp={setToggle}/>
                 </div> 
             </div>
-            <div className="events-view-box">
+            <div className="event-detail-container">
                 <h2 className="event-heading">UPCOMING EVENTS</h2>
             {filteredEvents.map(event =>{
             return(

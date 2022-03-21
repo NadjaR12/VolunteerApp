@@ -23,7 +23,7 @@ export default function EventDetails() {
 		{event === null ? <div>Loading ...</div> :
 		<>
 			<NavbarVisitor />
-			<div className='bg-overlay-event-detail page-container'> 
+			<div className='project-page-container bg-overlay-event'> 
 				<div className='heading-projectdetail-container'></div>
 				<div className='event-detail-container'>
 					<div>{event.eventPicture}</div>
