@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.ffa0a91d.css",
-    "main.js": "/static/js/main.3abf42db.js",
+    "main.css": "/static/css/main.c8a1d620.css",
+    "main.js": "/static/js/main.cb5c0da6.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/login_background.jpg": "/static/media/login_background.52d12904f63d700984c6.jpg",
     "static/media/38168685___o.jpg": "/static/media/38168685_10156757881729060_2945055295295979520_o.a7642c82929795a7bb35.jpg",
-    "static/media/rs_logo.png": "/static/media/rs_logo.a3cb5654e0988a180136.png",
+    "static/media/mural-wallpaper.jpeg": "/static/media/mural-wallpaper.b10e2ece9472fd0bbc3d.jpeg",
     "static/media/50613531___o.jpg": "/static/media/50613531_1865840476871868_9220936635779121152_o.450805ff36f58cabfc9d.jpg",
     "static/media/nadja.jpg": "/static/media/nadja.faf0f2a3bf3a01a1399d.jpg",
     "static/media/50070715___o.jpg": "/static/media/50070715_1865840443538538_8312521035148689408_o.466306e7ae4df080d2bd.jpg",
@@ -13,12 +13,12 @@
     "static/media/blue-brush-stroke.jpg": "/static/media/blue-brush-stroke.1ebc343498b58ca7b51c.jpg",
     "static/media/purple-brush-stroke.jpg": "/static/media/purple-brush-stroke.9cae7c14a292cc2a7eef.jpg",
     "index.html": "/index.html",
-    "main.ffa0a91d.css.map": "/static/css/main.ffa0a91d.css.map",
-    "main.3abf42db.js.map": "/static/js/main.3abf42db.js.map",
+    "main.c8a1d620.css.map": "/static/css/main.c8a1d620.css.map",
+    "main.cb5c0da6.js.map": "/static/js/main.cb5c0da6.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffa0a91d.css",
-    "static/js/main.3abf42db.js"
+    "static/css/main.c8a1d620.css",
+    "static/js/main.cb5c0da6.js"
   ]
 }
