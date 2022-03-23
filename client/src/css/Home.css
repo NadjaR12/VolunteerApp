@@ -175,7 +175,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: aqua;
+  color: white;
   font-size: larger;
 }
 .background-1 {

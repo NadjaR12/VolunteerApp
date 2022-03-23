@@ -16,7 +16,7 @@ const handleMenu = () => {
     <div className="home-overlay fixed-background">
       <NavbarHome />
       <div className="logo-container">
-        <img className={showMenu ? "logo animation-container-open-menu" : "logo animation-container"} onClick={handleMenu} src="/images/logo_gelb.png" alt="Logo"/>
+        <img className={showMenu ? "logo animation-container-open-menu" : "logo animation-container"} onClick={handleMenu} src="/images/logo_rot.png" alt="Logo"/>
         {showMenu && (
                   <Menu />
                 )}

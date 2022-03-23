@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 
-const API_URL='https://collective-app-2.herokuapp.com'
+const API_URL='https://volunteer-project-rs.herokuapp.com'
 
 export default function Signup() {
 
@@ -20,7 +20,6 @@ export default function Signup() {
 		const requestBody = { email, password, name }
 		axios.post(`/api/auth/signup`, requestBody)
 			.then(response => {
-				
 				navigate('/behind-the-scences/login')
 			})
 			.catch(err => {
@@ -41,7 +40,6 @@ export default function Signup() {
 					<div>
 						<h3>Signup</h3>
 					</div>
-
 					<div>
 						<form onSubmit={handleSubmit}>
 							<div className='signup-box-together'>
@@ -53,7 +51,6 @@ export default function Signup() {
 								placeholder='foo@foo.com'
 								onChange={handleEmail} />
 							</div>
-
 							<div className='signup-box-together'>
 								<div className='signup-text-input'><label htmlFor="password">Password </label></div>				
 								<input className='signup-input-box'
@@ -63,7 +60,6 @@ export default function Signup() {
 								placeholder='******'
 								onChange={handlePassword} />
 							</div>
-
 							<div className='signup-box-together'>
 								<div className='signup-text-input'><label for="cpassword">Confirm Password</label></div>
           						<input type="password" id="cpassword" name="cpassword" placeholder='******' className='signup-input-box' required="required"/>
@@ -82,10 +78,7 @@ export default function Signup() {
 							</div>
 						</form>
 					</div>
-
 					{errorMessage && <h5>{errorMessage}</h5>}
-            	
-
             		<div>
 						Already have an Account?<Link to='/behind-the-scences/login'>Login</Link>
             		</div>

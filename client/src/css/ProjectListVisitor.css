@@ -8,7 +8,7 @@
 }
 .bg-overlay{
     background: linear-gradient(0deg, rgba(255, 94, 97, 0.808), rgba(255, 153, 102, 0.781)), url('../../public/images/mural-wallpaper.jpeg');
-    background-repeat: repeat;
+    background-size: cover;
 }
 .heading-project-container {
     width: 100%;

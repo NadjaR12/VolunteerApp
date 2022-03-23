@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { AuthContext } from '../context/auth'
 
-const API_URL = 'https://collective-app-2.herokuapp.com';
+const API_URL = 'https://volunteer-project-rs.herokuapp.com';
 
 export default function Login() {
 
@@ -62,7 +62,7 @@ export default function Login() {
 							<div className='signup-box-together'>
 								<div className='signup-text-input'><label htmlFor="password">Password: </label></div>
 								<input className='signup-input-box'
-								type="password"
+								type='password'
 								name='password'
 								value={password}
 								placeholder='******'

@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from "../context/auth";
 import { Navigate } from "react-router-dom";
 
-export default function IsPrivate( { children } ) {
+export default function ( { children } ) {
   
   const { isLoggedIn, isLoading } = useContext(AuthContext);
 
@@ -11,7 +11,7 @@ export default function IsPrivate( { children } ) {
 
   if (!isLoggedIn) {
   // If the admin is not logged in 
-    return <Navigate to="/login" />;
+    return <Navigate to="/behind-the-scences/login" />;
   } else {
   // If the admin is logged in, allow to see the page 
     return children;
