@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.618f5d01.css",
-    "main.js": "/static/js/main.34b196a6.js",
+    "main.css": "/static/css/main.cf5b8139.css",
+    "main.js": "/static/js/main.f3365eb0.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/login_background.jpg": "/static/media/login_background.52d12904f63d700984c6.jpg",
     "static/media/38168685___o.jpg": "/static/media/38168685_10156757881729060_2945055295295979520_o.a7642c82929795a7bb35.jpg",
@@ -11,14 +11,15 @@
     "static/media/50070715___o.jpg": "/static/media/50070715_1865840443538538_8312521035148689408_o.466306e7ae4df080d2bd.jpg",
     "static/media/turquoise-brush-stroke.jpeg": "/static/media/turquoise-brush-stroke.325c45efaa41c3dfec63.jpeg",
     "static/media/blue-brush-stroke.jpg": "/static/media/blue-brush-stroke.1ebc343498b58ca7b51c.jpg",
+    "static/media/white_brush.png": "/static/media/white_brush.aa60c0c9c55e1fdff7a7.png",
     "static/media/purple-brush-stroke.jpg": "/static/media/purple-brush-stroke.9cae7c14a292cc2a7eef.jpg",
     "index.html": "/index.html",
-    "main.618f5d01.css.map": "/static/css/main.618f5d01.css.map",
-    "main.34b196a6.js.map": "/static/js/main.34b196a6.js.map",
+    "main.cf5b8139.css.map": "/static/css/main.cf5b8139.css.map",
+    "main.f3365eb0.js.map": "/static/js/main.f3365eb0.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.618f5d01.css",
-    "static/js/main.34b196a6.js"
+    "static/css/main.cf5b8139.css",
+    "static/js/main.f3365eb0.js"
   ]
 }

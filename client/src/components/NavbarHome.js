@@ -4,10 +4,10 @@ export default function NavbarHome (){
 
     return(
         <nav className="nav-home">
-        <div className="nav-links-container">
-            <Link className="nav-link" to='/Projects'>PROJECTS</Link> 
-            |
-            <Link className="nav-link" to='/Events'>EVENTS</Link>
+        <div className="nav-links-container-home">
+            <div><Link className="nav-link-home" to='/Projects'>PROJECTS</Link></div> 
+            <div>|</div>
+            <div><Link className="nav-link-home" to='/Events'>EVENTS</Link></div>
         </div>
         </nav>
     )
