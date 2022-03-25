@@ -32,7 +32,6 @@ header {
   padding-top: 3vh;
   padding-right: 3vw;
   margin-left: 77vw;
-  /* background-color: rgba(255, 0, 0, 0.404); */
   position:fixed;
   display: flex;
   justify-content:flex-end;
@@ -160,23 +159,9 @@ header {
 .icon {
   width: 4vw;
 }
-.footer {
-  height: 10vh;
-  padding: 10px;
-  margin-top:20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color:  white;
-}
-.footer-link {
-  margin: 5px;
-}
 .text-section-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   color: white;
+  /* background-color: red; */
   font-size: larger;
 }
 .background-1 {
@@ -189,18 +174,25 @@ header {
   background-image: url("../../public/images/aquarell_pink.png");
 }
 .scroll-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: white;
   margin: 30px;
   padding: 30px;
   text-align: center;
   border-radius: 20px;
+  background-color: rgb(124, 207, 203);
 }
-.scroll-bg-color-1 {
-  background-color: rgb(103, 221, 215);
+.footer {
+  height: 10vh;
+  padding: 10px;
+  margin-top:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color:  white;
 }
-.scroll-bg-color-2 {
-  background-color: rgb(103, 221, 215);
-}
-.scroll-bg-color-3 {
-  background-color: rgb(103, 221, 215);
+.footer-link {
+  margin: 5px;
 }

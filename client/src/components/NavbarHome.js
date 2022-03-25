@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import Menu from "./Menu";
 
 export default function NavbarHome (){
-    const [showMenu, setShowMenu] = useState(false)
-
-    const handleMenu = () => {
-      setShowMenu(!showMenu)
-    }
+  
     return(
         <>
         <nav className="nav-home">
