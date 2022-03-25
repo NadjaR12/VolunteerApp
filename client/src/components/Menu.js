@@ -17,6 +17,14 @@ export default function Menu() {
         <Link className='menu-link animate__animated animate__fadeInDown' to={'/music'}>MUSIC</Link>
         {/* <hr className='menu-hr animate__animated animate__fadeInUp'></hr> */}
         </div>
+        <div>
+        <Link className='menu-link animate__animated animate__fadeInDown' to={'/projects'}>PROJECTS</Link>
+        {/* <hr className='menu-hr animate__animated animate__fadeInUp'></hr> */}
+        </div>
+        <div>
+        <Link className='menu-link animate__animated animate__fadeInDown' to={'/events'}>EVENTS</Link>
+        {/* <hr className='menu-hr animate__animated animate__fadeInUp'></hr> */}
+        </div>
     </div>
   )
 }

@@ -3,24 +3,22 @@ import NavbarHome from '../components/NavbarHome'
 import Menu from '../components/Menu'
 
 export default function Home() {
-const [showMenu, setShowMenu] = useState(false)
+  const [showMenu, setShowMenu] = useState(false)
 
-const handleMenu = () => {
-  setShowMenu(!showMenu)
-
-}
-
+  const handleMenu = () => {
+    setShowMenu(!showMenu)
+  }
   return (
   <>
     <div className="home-container fixed-background">
     <div className="home-overlay fixed-background">
-      <NavbarHome />
-      <div className="logo-container">
+    <div className="logo-container">
         <img className={showMenu ? "logo animation-container-open-menu" : "logo animation-container"} onClick={handleMenu} src="/images/logo_aqua.png" alt="Logo"/>
         {showMenu && (
                   <Menu />
                 )}
       </div>
+      <NavbarHome />
     </div>
     </div>
     <div className='text-section-container fixed-background background-1'>
