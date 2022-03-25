@@ -1,7 +1,7 @@
 import React from "react";
 import CreateEvent from './CreateEvent'
 
-export default  function PopupCreateEvent  (props) {
+export default  function PopupCreateEvent (props) {
 
     return(
         <div className="popup-box">

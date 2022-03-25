@@ -30,7 +30,7 @@ export default function CreateEvent(props) {
   
   const handleSubmit = e => {
 		e.preventDefault()
-		const requestBody = { eventName, eventDescription, eventDate, eventTime, eventType, eventPicture, eventLocation, eventOutdoor }
+	  const requestBody = { eventName, eventDescription, eventDate, eventTime, eventType, eventPicture, eventLocation, eventOutdoor }
 		axios.post(`/api/event/create`, requestBody)
     .then(response => {
       console.log(response)

@@ -16,22 +16,20 @@ export default function TypeFilterEvent(props){
 
     console.log('this are the props', props)
 
-    
-
     return(
         <>
-        <div>
-            Event Type
-        </div>
-        <div>
-        <label>
-            <select className="filterEvent-input-box" value={props.type} onChange={(event => props.setTypeProp(event.target.value))}>
-                {options.map((option) => (
-                <option value={option.value}>{option.label}</option>
-                ))}
-            </select>
-        </label>
-        </div>
+            <div>
+                Event Type
+            </div>
+            <div>
+                <label>
+                    <select className="filterEvent-input-box" value={props.type} onChange={(event => props.setTypeProp(event.target.value))}>
+                        {options.map((option) => (
+                        <option value={option.value}>{option.label}</option>
+                        ))}
+                    </select>
+                </label>
+            </div>
         </>
     )
 }

@@ -8,8 +8,8 @@ export default function VolunteerToggle(props){
         <>
             <div>Has Tools</div>
             <label className="toggle-switch">
-            <input type="checkBox" onChange={handleCheckBox}/>
-            <span className="switch"/>
+                <input type="checkBox" onChange={handleCheckBox}/>
+                <span className="switch"/>
             </label>
         </>
     )

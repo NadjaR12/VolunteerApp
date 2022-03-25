@@ -1,18 +1,14 @@
-import React from "react";
+import React,  { useState, useEffect }  from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
 import NavbarVisitor from "../components/NavbarVisitor";
 import DateFilterEvent from "../components/DateFilterEvent";
 import SearchBarEvent from "../components/SearchBarEvent";
-import { useState, useEffect } from "react";
 import ToggleEvent from "../components/ToggleEvent";
-import axios from 'axios'
-import { Link } from "react-router-dom";
 import TypeFilterEvent from "../components/TypeFilterEvent";
 
 
-
 export default function EventsVisitors(){
-
-    
 
     const [events, setEvents] = useState(null)
     const [query, setQuery] = useState('')
@@ -20,22 +16,15 @@ export default function EventsVisitors(){
     const [toggle, setToggle] = useState(false)
     const [type, setType] = useState('')
 
-    
-
     const storedToken = localStorage.getItem('authToken')
 
-    //get events from backend
-
     const getAllEvents =() => {
-
         axios.get(`/api/event/`, {headers: {Authorization: `Bearer ${storedToken}`}})
         .then(response => {
-          console.log('response.data',response.data)
           setEvents(response.data)
         })
        .catch(err => {console.log(err) })
    }
-
    useEffect(()=> {getAllEvents()}, [])
 
    const handleClean = () => {
@@ -45,74 +34,62 @@ export default function EventsVisitors(){
     let filteredEvents;
 
     if(events){
-    filteredEvents = events.filter(event =>{
+    filteredEvents = events.filter(event => {
        return event.eventName.toLowerCase().includes(query)
     })}
-
-    
     if(events && eventDate){
-        filteredEvents = filteredEvents.filter(event =>{
+        filteredEvents = filteredEvents.filter(event => {
             return event.eventDate === eventDate
          })
     }
-
     if(toggle){
-         filteredEvents = filteredEvents.filter(event =>{
+         filteredEvents = filteredEvents.filter(event => {
             return event.eventOutdoor === true
         })
     }
-    
     if(type !== ''){
-       filteredEvents = filteredEvents.filter( event =>{
+       filteredEvents = filteredEvents.filter( event => {
            return event.eventType.toLowerCase() === type.toLowerCase()
        })
     }
    
-    
     if(events === null){
         return <>Loading...</>
     }
-    
     return(
     <>
         <div>
             <NavbarVisitor />
         </div>
-        <div className="bg-overlay-event">
-        <div className="events-view-back">
-            <div className="filters-box">
-                <div className="filter-title">
-                    <p>Find your event</p>
-                </div>
-                <div>
-                    <DateFilterEvent eventDate={eventDate} setEventDateProp={setEventDate}/>
-                    <button className='glow-on-events' onClick={handleClean}>Reset date</button> 
+        <div className="event-page-container bg-overlay-event">
+        <div className='heading-project-container'>
+          <h1>UPCOMING EVENTS</h1>
+        </div>
+            {/* Filter Box */}
+            <div className="filter-box">
                     <SearchBarEvent setQueryProp={setQuery}/>
                     <TypeFilterEvent type={type} setTypeProp={setType}/>
+                    <DateFilterEvent eventDate={eventDate} setEventDateProp={setEventDate}/>
+                    <button className='glow-on-events' onClick={handleClean}>Reset date</button> 
                     <ToggleEvent setCheckProp={setToggle}/>
-                </div> 
             </div>
-            <div className="event-detail-container">
-                <h2 className="event-heading">UPCOMING EVENTS</h2>
-            {filteredEvents.map(event =>{
+            {/* Event List */}
+            <div className='event-container'>
+            {filteredEvents.map(event => {
             return(
-                <div key={event._id} className='events-view-ind-box'>
-                <div className="events-view-image-box">{event.eventPicture}</div>
-                <div>
-                    <h3 className="event-title">{event.eventName}</h3>
-                    <div className="event-description">{event.eventDescription}</div>
-                    <div>{event.eventType}</div>
+                <div key={event._id} className='single-project-container'>
+                    <h1 className="event-title">{event.eventName}</h1>
+                    <p>#{event.eventType}</p>
+                    <h4><img className='map-icon' src='/images/placeholder.png' alt=''/>{event.eventLocation}</h4>
                     <div>{event.eventDate}</div>
+                    <p>{event.eventTime}</p>
                     <hr className="hr"></hr>  
                     <Link className="event-link" to={`/events/${event._id}`}>Details</Link>
                     <hr className="hr"></hr>
                 </div>
-                </div>)
-            })}
-
-                
+            )
+            })} 
             </div>
-        </div>
         </div>
     </>
     )
