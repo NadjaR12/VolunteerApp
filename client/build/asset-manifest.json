@@ -1,25 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.7db76486.css",
+    "main.css": "/static/css/main.4d995244.css",
     "main.js": "/static/js/main.64628aff.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/aquarell_pink.png": "/static/media/aquarell_pink.2113e480477ed51ba126.png",
     "static/media/login_background.jpg": "/static/media/login_background.52d12904f63d700984c6.jpg",
+    "static/media/aquarell_turquoise.png": "/static/media/aquarell_turquoise.71df161282d30568274a.png",
     "static/media/38168685___o.jpg": "/static/media/38168685_10156757881729060_2945055295295979520_o.a7642c82929795a7bb35.jpg",
     "static/media/mural-wallpaper.jpeg": "/static/media/mural-wallpaper.b10e2ece9472fd0bbc3d.jpeg",
     "static/media/50613531___o.jpg": "/static/media/50613531_1865840476871868_9220936635779121152_o.450805ff36f58cabfc9d.jpg",
     "static/media/nadja.jpg": "/static/media/nadja.faf0f2a3bf3a01a1399d.jpg",
     "static/media/50070715___o.jpg": "/static/media/50070715_1865840443538538_8312521035148689408_o.466306e7ae4df080d2bd.jpg",
-    "static/media/turquoise-brush-stroke.jpeg": "/static/media/turquoise-brush-stroke.325c45efaa41c3dfec63.jpeg",
-    "static/media/blue-brush-stroke.jpg": "/static/media/blue-brush-stroke.1ebc343498b58ca7b51c.jpg",
     "static/media/white_brush.png": "/static/media/white_brush.aa60c0c9c55e1fdff7a7.png",
-    "static/media/purple-brush-stroke.jpg": "/static/media/purple-brush-stroke.9cae7c14a292cc2a7eef.jpg",
     "index.html": "/index.html",
-    "main.7db76486.css.map": "/static/css/main.7db76486.css.map",
+    "main.4d995244.css.map": "/static/css/main.4d995244.css.map",
     "main.64628aff.js.map": "/static/js/main.64628aff.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7db76486.css",
+    "static/css/main.4d995244.css",
     "static/js/main.64628aff.js"
   ]
 }
