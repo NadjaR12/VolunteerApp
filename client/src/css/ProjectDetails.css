@@ -2,7 +2,7 @@
     width: 100vw;
     height: 5vh;
     padding-top: 19vh;
-    color: rgb(255 153 102);
+    color: rgb(75, 131, 128);
     font-size: 24px;
     display: flex;
     justify-content: center;
@@ -11,7 +11,7 @@
 .project-detail-container {
     padding-top: 10px;
     padding-bottom:10px;
-    color: rgb(255 94 98);
+    color: rgb(75, 131, 128);
 }
 .map-icon {
     width: 15px;
@@ -32,6 +32,6 @@
     position: relative;
 }
 .line {
-    border: 0.5px solid rgb(255 94 98);
+    border: 0.5px solid rgb(124, 211, 208);
     border-radius: 50px;
 }

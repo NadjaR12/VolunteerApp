@@ -20,11 +20,11 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  animation: backgroundchange 60s ease infinite;
+  animation: backgroundchange 30s ease infinite;
 }
 .home-overlay {
   background-attachment: fixed;
-  animation: backgroundoverlay 60s ease infinite;
+  animation: backgroundoverlay 30s ease infinite;
 }
 .logo-container {
   height: 20vh;
@@ -45,7 +45,7 @@ header {
     background-color: rgba(0, 255, 255, 0.342);
   }
   20% {
-    background-color: rgba(137, 43, 226, 0.384);
+    background-color: rgba(137, 43, 226, 0.459);
   }
   40% {
     background-color: rgba(0, 255, 255, 0.342);
@@ -117,51 +117,11 @@ header {
     transform: rotate(359deg);
   }
 }
-/* mybounce animation lets the logo bounce from side to side */
-/* @keyframes mybounce {
-  0% {
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-  10% {
-    margin-left: 92vw;
-    margin-top: 20vh;
-  }
-  20% {
-    margin-left: -1vw;
-    margin-top: 40vh;
-  }
-  30% {
-    margin-left: 92vw;
-    margin-top: 0vh;
-  }
-  60% {
-    margin-left: -1vw;
-    margin-top: 50vh;
-  }
-  80% {
-    margin-left: 80vw;
-    margin-top: 60vh;
-  }
-  85% {
-    margin-left: -1vw;
-    margin-top: 50vh;
-  }
-  90% {
-    margin-left: 92vw;
-    margin-top: 50vh;
-  }
-  100% {
-    margin-left: -1vw;
-    margin-top: 0%;
-  }
-} */
 .icon {
   width: 4vw;
 }
 .text-section-container {
   color: white;
-  /* background-color: red; */
   font-size: larger;
 }
 .background-1 {

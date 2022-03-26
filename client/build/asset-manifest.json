@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.45977e0b.css",
-    "main.js": "/static/js/main.033f4861.js",
+    "main.css": "/static/css/main.80d858f2.css",
+    "main.js": "/static/js/main.0fd437f2.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/aquarell_blau.png": "/static/media/aquarell_blau.b0f1825293046a1ca81c.png",
     "static/media/aquarell_pink.png": "/static/media/aquarell_pink.2113e480477ed51ba126.png",
     "static/media/login_background.jpg": "/static/media/login_background.52d12904f63d700984c6.jpg",
     "static/media/aquarell_turquoise.png": "/static/media/aquarell_turquoise.71df161282d30568274a.png",
@@ -13,12 +14,12 @@
     "static/media/50070715___o.jpg": "/static/media/50070715_1865840443538538_8312521035148689408_o.466306e7ae4df080d2bd.jpg",
     "static/media/white_brush.png": "/static/media/white_brush.aa60c0c9c55e1fdff7a7.png",
     "index.html": "/index.html",
-    "main.45977e0b.css.map": "/static/css/main.45977e0b.css.map",
-    "main.033f4861.js.map": "/static/js/main.033f4861.js.map",
+    "main.80d858f2.css.map": "/static/css/main.80d858f2.css.map",
+    "main.0fd437f2.js.map": "/static/js/main.0fd437f2.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45977e0b.css",
-    "static/js/main.033f4861.js"
+    "static/css/main.80d858f2.css",
+    "static/js/main.0fd437f2.js"
   ]
 }

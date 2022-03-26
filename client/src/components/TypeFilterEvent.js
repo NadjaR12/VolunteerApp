@@ -23,7 +23,7 @@ export default function TypeFilterEvent(props){
             </div>
             <div>
                 <label>
-                    <select className="filterEvent-input-box" value={props.type} onChange={(event => props.setTypeProp(event.target.value))}>
+                    <select className="event-filter-input" value={props.type} onChange={(event => props.setTypeProp(event.target.value))}>
                         {options.map((option) => (
                         <option value={option.value}>{option.label}</option>
                         ))}

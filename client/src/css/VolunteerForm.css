@@ -2,6 +2,7 @@
     background: linear-gradient(0deg, rgba(0, 121, 145, 0.904), rgba(120, 255, 215, 0.897)), url('../../public/images/mural-wallpaper.jpeg');
     background-repeat: repeat;
     padding-bottom: 160px;
+    background-size: cover;
 }
 .project-container-volunteer {
     margin-top: 10%;

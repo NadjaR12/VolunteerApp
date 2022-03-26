@@ -58,37 +58,35 @@ export default function EventsVisitors(){
     }
     return(
     <>
-        <div>
-            <NavbarVisitor />
-        </div>
-        <div className="event-page-container bg-overlay-event">
+        <NavbarVisitor />
         <div className='heading-project-container'>
           <h1>UPCOMING EVENTS</h1>
         </div>
+        <div className="event-page-container bg-overlay-event">
             {/* Filter Box */}
             <div className="filter-box">
                     <SearchBarEvent setQueryProp={setQuery}/>
                     <TypeFilterEvent type={type} setTypeProp={setType}/>
                     <DateFilterEvent eventDate={eventDate} setEventDateProp={setEventDate}/>
-                    <button className='glow-on-events' onClick={handleClean}>Reset date</button> 
+                    <button className='glow-on-events' onClick={handleClean}>Reset Date</button> 
                     <ToggleEvent setCheckProp={setToggle}/>
             </div>
             {/* Event List */}
             <div className='event-container'>
             {filteredEvents.map(event => {
-            return(
-                <div key={event._id} className='single-project-container'>
-                    <h1 className="event-title">{event.eventName}</h1>
-                    <p>#{event.eventType}</p>
-                    <h4><img className='map-icon' src='/images/placeholder.png' alt=''/>{event.eventLocation}</h4>
-                    <div>{event.eventDate}</div>
-                    <p>{event.eventTime}</p>
-                    <hr className="hr"></hr>  
-                    <Link className="event-link" to={`/events/${event._id}`}>Details</Link>
-                    <hr className="hr"></hr>
-                </div>
-            )
-            })} 
+                return(
+                    <div key={event._id} className='single-project-container'>
+                        <h1 className="event-title">{event.eventName}</h1>
+                        <p>#{event.eventType}</p>
+                        <h4><img className='map-icon' src='/images/placeholder.png' alt=''/>{event.eventLocation}</h4>
+                        <div>{event.eventDate}</div>
+                        <p>{event.eventTime}</p>
+                        <hr className="hr"></hr>  
+                        <Link className="event-link" to={`/events/${event._id}`}>Details</Link>
+                        <hr className="hr"></hr>
+                    </div>
+                )
+                })} 
             </div>
         </div>
     </>

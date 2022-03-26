@@ -6,7 +6,7 @@ export default function DateFilterEvent(props){
     return(
         <>
 			<div>Choose a date</div>
-			<input className="filterEvent-input-box"
+			<input className="event-filter-input"
 				name='eventDate'
 				type="date"
 				value={props.eventDate}
