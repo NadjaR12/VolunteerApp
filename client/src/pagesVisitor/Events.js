@@ -1,14 +1,14 @@
-import React,  { useState, useEffect }  from "react";
-import { Link } from "react-router-dom";
-import axios from "axios";
-import NavbarVisitor from "../components/NavbarVisitor";
-import DateFilterEvent from "../components/DateFilterEvent";
-import SearchBarEvent from "../components/SearchBarEvent";
-import ToggleEvent from "../components/ToggleEvent";
-import TypeFilterEvent from "../components/TypeFilterEvent";
+import React,  { useState, useEffect }  from 'react'
+import { Link } from 'react-router-dom'
+import axios from 'axios'
+import NavbarVisitor from '../components/NavbarVisitor'
+import DateFilterEvent from '../components/DateFilterEvent'
+import SearchBarEvent from '../components/SearchBarEvent'
+import ToggleEvent from '../components/ToggleEvent'
+import TypeFilterEvent from '../components/TypeFilterEvent'
 
 
-export default function EventsVisitors(){
+export default function EventsVisitors() {
 
     const [events, setEvents] = useState(null)
     const [query, setQuery] = useState('')
@@ -19,7 +19,7 @@ export default function EventsVisitors(){
     const storedToken = localStorage.getItem('authToken')
 
     const getAllEvents =() => {
-        axios.get(`/api/event/`, {headers: {Authorization: `Bearer ${storedToken}`}})
+        axios.get(`/api/events/`, {headers: {Authorization: `Bearer ${storedToken}`}})
         .then(response => {
           setEvents(response.data)
         })
@@ -59,7 +59,7 @@ export default function EventsVisitors(){
     return(
     <>
         <NavbarVisitor />
-        <div className='heading-project-container'>
+        <div className="heading-project-container">
           <h1>UPCOMING EVENTS</h1>
         </div>
         <div className="event-page-container bg-overlay-event">
@@ -68,17 +68,17 @@ export default function EventsVisitors(){
                     <SearchBarEvent setQueryProp={setQuery}/>
                     <TypeFilterEvent type={type} setTypeProp={setType}/>
                     <DateFilterEvent eventDate={eventDate} setEventDateProp={setEventDate}/>
-                    <button className='glow-on-events' onClick={handleClean}>Reset Date</button> 
+                    <button className="glow-on-events" onClick={handleClean}>Reset Date</button> 
                     <ToggleEvent setCheckProp={setToggle}/>
             </div>
             {/* Event List */}
-            <div className='event-container'>
+            <div className="event-container">
             {filteredEvents.map(event => {
                 return(
-                    <div key={event._id} className='single-project-container'>
+                    <div key={event._id} className="single-project-container">
                         <h1 className="event-title">{event.eventName}</h1>
                         <p>#{event.eventType}</p>
-                        <h4><img className='map-icon' src='/images/placeholder.png' alt=''/>{event.eventLocation}</h4>
+                        <h4><img className="map-icon" src="/images/placeholder.png" alt=""/>{event.eventLocation}</h4>
                         <div>{event.eventDate}</div>
                         <p>{event.eventTime}</p>
                         <hr className="hr"></hr>  

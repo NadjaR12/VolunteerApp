@@ -1,5 +1,5 @@
-import React from "react";
-import EditProject from "../pagesAdmin/EditProject";
+import React from 'react'
+import EditProject from '../pagesAdmin/EditProject'
  
 const Popup = props => {
     console.log("props", props)

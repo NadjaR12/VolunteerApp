@@ -1,16 +1,13 @@
-import { useContext } from "react";
-import { AuthContext } from "../context/auth";
-import { Navigate } from "react-router-dom";
+import { useContext } from 'react'
+import { Navigate } from 'react-router-dom'
+import { AuthContext } from '../context/auth'
 
 export default function ( { children } ) {
   
   const { isLoggedIn, isLoading } = useContext(AuthContext);
 
-  // If the authentication is still loading 
   if (isLoading) return <p>Loading ...</p>;
-
   if (!isLoggedIn) {
-  // If the admin is not logged in 
     return <Navigate to="/behind-the-scences/login" />;
   } else {
   // If the admin is logged in, allow to see the page 

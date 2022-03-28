@@ -1,13 +1,11 @@
-import { Link } from "react-router-dom";
-import { useContext } from "react";                      
-import { AuthContext } from "../context/auth";  
+import { Link } from 'react-router-dom'
+import React, { useContext } from 'react'                     
+import { AuthContext } from '../context/auth' 
 
 function NavbarAdmin() {
   // Subscribe to the AuthContext to gain access to
   // the values from AuthContext.Provider `value` prop
   const { isLoggedIn, logOutAdmin } = useContext(AuthContext);   // <== ADD
-
-  
   //  Update the rendering logic to display different content 
   //  depending on the user being logged in or not
   return (
@@ -16,8 +14,8 @@ function NavbarAdmin() {
         <Link className="nav-link" to="/">HOME</Link>
         {isLoggedIn && (
           <>
-          |
-          <Link to='/'className="nav-link"> LOGOUT</Link>
+            |
+            <Link to="/"className="nav-link"> LOGOUT</Link>
           </>
         )}
         {!isLoggedIn && (

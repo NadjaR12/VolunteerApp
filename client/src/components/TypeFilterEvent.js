@@ -1,8 +1,5 @@
+export default function TypeFilterEvent(props) {
 
-
-export default function TypeFilterEvent(props){
-
-    
     const options = [
         {label:'See All', value:''},
         {label: 'Music', value: 'music' },
@@ -14,13 +11,9 @@ export default function TypeFilterEvent(props){
         {label: 'Social Volunteer', value: 'social volunteer' },
     ]
 
-    console.log('this are the props', props)
-
     return(
         <>
-            <div>
-                Event Type
-            </div>
+            <div>Event Type</div>
             <div>
                 <label>
                     <select className="event-filter-input" value={props.type} onChange={(event => props.setTypeProp(event.target.value))}>

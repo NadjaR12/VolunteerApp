@@ -8,6 +8,7 @@ export default function Home() {
   const handleMenu = () => {
     setShowMenu(!showMenu)
   }
+
   return (
   <>
     <div className="home-container fixed-background">
@@ -22,18 +23,18 @@ export default function Home() {
     </div>
     </div>
     {/* About Section */}
-      <div className='text-section-container fixed-background background-1 scroll-background'>
-        <a id='about'><h1>/ABOUT</h1></a>
+      <div className="text-section-container fixed-background background-1 scroll-background">
+        <a id="about"><h1>/ABOUT</h1></a>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dolor tempor, posuere mi id, eleifend magna. Nulla at lectus magna. Etiam sodales arcu at lectus porttitor accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur id urna dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin et pharetra justo, quis suscipit risus. Maecenas tincidunt efficitur ex in pharetra.</p>
       </div>
     {/* Gallery-Section */}
-    <div className='text-section-container fixed-background background-2 scroll-background'>
-        <a id='gallery'><h1>/GALLERY</h1></a>
+    <div className="text-section-container fixed-background background-2 scroll-background">
+        <a id="gallery"><h1>/GALLERY</h1></a>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dolor tempor, posuere mi id, eleifend magna. Nulla at lectus magna. Etiam sodales arcu at lectus porttitor accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur id urna dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin et pharetra justo, quis suscipit risus. Maecenas tincidunt efficitur ex in pharetra.</p>
     </div>
     {/* Music-Section */}
-    <div className='text-section-container fixed-background background-3 scroll-background'>
-        <a id='music'><h1>/MUSIC</h1></a>
+    <div className="text-section-container fixed-background background-3 scroll-background">
+        <a id="music"><h1>/MUSIC</h1></a>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dolor tempor, posuere mi id, eleifend magna. Nulla at lectus magna. Etiam sodales arcu at lectus porttitor accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur id urna dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin et pharetra justo, quis suscipit risus. Maecenas tincidunt efficitur ex in pharetra.</p>
     </div>
     <footer className="footer">

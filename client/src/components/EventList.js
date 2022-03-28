@@ -4,8 +4,6 @@ import PopupCreateEvent from './PopupCreateEvent'
 import PopupEditEvent from './PopUpEditEvent'
 
 
-
-
 export default function EventList() {
     
     const [events, setEvents] = useState([])
@@ -22,7 +20,7 @@ export default function EventList() {
     //get events from backend
     const getAllEvents =() => {
 
-      axios.get(`/api/event/`, {headers: {Authorization: `Bearer ${storedToken}`}})
+      axios.get(`/api/events/`, {headers: {Authorization: `Bearer ${storedToken}`}})
       .then(response => {
         console.log('response.data',response.data)
         setEvents(response.data)
@@ -36,43 +34,40 @@ export default function EventList() {
     
     
     return(
-        <>
+      <>
         <div>
-          <div className='dash-title-box'>
+          <div className="dash-title-box">
             Events
             <div>
-              <button className='create-btn' onClick={()=> setShowCreateEvent(!showCreateEvent)}>+</button>
+              <button className="create-btn" onClick={()=> setShowCreateEvent(!showCreateEvent)}>+</button>
                 {showCreateEvent && (
-                  <PopupCreateEvent refreshEvents={getAllEvents} handleClose={() => setShowCreateEvent(false)}/>
+                <PopupCreateEvent refreshEvents={getAllEvents} handleClose={() => setShowCreateEvent(false)}/>
                 )}
             </div>
           </div>
           <div>
-              <button className='drop-down-btn'><img className="img-arrow" src="/images/drop-down-arrow.png" alt="pfeil"></img></button>
+            <button className="drop-down-btn"><img className="img-arrow" src="/images/drop-down-arrow.png" alt="pfeil"></img></button>
           </div>
         </div>
-          <div>
-            {events.map(event=>
-              <div className='dash-list-item' key={event._id}>
-                <div className='dash-list-title'>{event.eventName}</div>
-                <div className='dash-btn-container'>
-                <button  className='dash-btn' onClick={()=> {handlePopupEdit(event)}}>Edit</button>
-                  {eventToEdit && <PopupEditEvent
-                  handleClose={() => {setEventToEdit(null)}} thisevent={eventToEdit} refreshEvents={getAllEvents}/>
-                  }
-                <button  className='dash-btn' onClick={()=>{
-                    axios.delete(`/api/event/${event._id}`, { headers: { Authorization: `Bearer ${storedToken}` } })
-                      .then(deletedProject => {
-                        console.log('deletedEvent', deletedProject)
-                        // get all projects to show immediately list of projects without deleted item
-                        getAllEvents();
-                        })
-                      .catch(err => console.log(err))
-                  }}>Delete</button>
-                 </div>
+        <div>
+          {events.map(event=>
+          <div className="dash-list-item" key={event._id}>
+            <div className="dash-list-title">{event.eventName}</div>
+            <div className="dash-btn-container">
+              <button  className="dash-btn" onClick={() => {handlePopupEdit(event)}}>Edit</button>
+              {eventToEdit && <PopupEditEvent handleClose={() => {setEventToEdit(null)}} thisevent={eventToEdit} refreshEvents={getAllEvents}/>}
+              <button  className='dash-btn' onClick={() => {
+                axios.delete(`/api/events/${event._id}`, { headers: { Authorization: `Bearer ${storedToken}` } })
+                  .then(deletedProject => {
+                    console.log('deletedEvent', deletedProject)
+                    getAllEvents();
+                  })
+                  .catch(err => console.log(err))
+              }}>Delete</button>
             </div>
-            )}
           </div>
-        </>
+          )}
+        </div>
+      </>
     )  
 }

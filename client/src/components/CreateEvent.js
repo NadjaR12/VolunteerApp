@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
 import axios from 'axios'
-import Maps from './Maps';
-import PlacesAutocomplete from './autocompleteBar';
 import serviceEvent from '../api/serviceEvent'
 
 
@@ -26,12 +24,12 @@ export default function CreateEvent(props) {
     {label: 'Building', value: 'building' },
     {label: 'Meetups', value: 'meetups' },
     {label: 'Social Volunteer', value: 'social volunteer' },
-]
+  ]
   
   const handleSubmit = e => {
 		e.preventDefault()
 	  const requestBody = { eventName, eventDescription, eventDate, eventTime, eventType, eventPicture, eventLocation, eventOutdoor }
-		axios.post(`/api/event/create`, requestBody)
+		axios.post(`/api/events/create`, requestBody)
     .then(response => {
       console.log(response)
     })
@@ -74,17 +72,17 @@ export default function CreateEvent(props) {
     <h2>Create a new Event</h2>
     <form  className="popUp-form" onSubmit={handleSubmit} encType="multipart/form-data">
       <div className="popUp-container">
-        <label className='label-popUp' htmlFor='Name'>Name</label>
+        <label className="label-popUp" htmlFor="Name">Name</label>
         <input className="inputfield" type="text" value={eventName} onChange={handleEventName}></input>
-        <label className='label-popUp' htmlFor='Description'>Description</label>
+        <label className="label-popUp" htmlFor="Description">Description</label>
         <input className="inputfield" type="text" value={eventDescription} onChange={handleEventDescription}></input>
-        <label className='label-popUp' htmlFor='Date'>Date</label>
+        <label className="label-popUp" htmlFor="Date">Date</label>
         <input className="inputfield date-input" type="date" value={eventDate} onChange={handleEventDate}></input>
-        <label className='label-popUp' htmlFor='Time'>Time</label>
+        <label className="label-popUp" htmlFor="Time">Time</label>
         <input className="inputfield" type="time" value={eventTime} onChange={handleEventTime}></input>
-        <label className='label-popUp' htmlFor='Location'>Location</label>
+        <label className="label-popUp" htmlFor="Location">Location</label>
         <input className="inputfield" type="text" value={eventLocation} onChange={handleEventLocation}></input>
-        <label className='label-popUp'>Event Type</label>
+        <label className="label-popUp">Event Type</label>
         <label>
             <select className="inputfield" value={eventType} onChange={handleEventType}>
                 {options.map((option) => (
@@ -105,19 +103,10 @@ export default function CreateEvent(props) {
          <div>
             <input id="eventImages" name="eventPicture" type="file" onChange={(e) => handleFileUpload(e)} />
         </div> */}
-        
-            <label className='label-popUp' htmlFor='Outdoor'>Outdoor</label>
-            <input type="checkBox" value={eventOutdoor} onChange={handleCheckBox}/>
-        
-        
-        
-        {/* <PlacesAutocomplete eventLocation={eventLocation} setEventLocationProp={setEventLocation} />
-        <div>
-          <Maps />
-        </div> */}
-        
+        <label className="label-popUp" htmlFor="Outdoor">Outdoor</label>
+        <input type="checkBox" value={eventOutdoor} onChange={handleCheckBox}/>
       </div>        
-        <button className="popUp-btn" type='submit'>+</button>
+        <button className="popUp-btn" type="submit">+</button>
     </form>
     </>
   )

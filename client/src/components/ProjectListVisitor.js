@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 
-export default function ProjectListVisitor(){
+export default function ProjectListVisitor() {
 // State of Projects
 const [projects, setProjects] = useState([])
 
@@ -30,17 +30,17 @@ useEffect(() => {getAllProjects()}, [])
       <>
         {projects.map(project => {
             return (
-                <div className='single-project-container' key={project._id}>
-                    <h1 className='project-title'>{project.projectName.toUpperCase()}</h1>
-                    <h2 className='project-text'>{project.projectLocation}</h2>
-                    <h3 className='project-text'>{project.projectStartDate} - {project.projectEndDate}</h3>
-                    <hr className='line-two'></hr>
-                    <Link className='project-link' to={`/projects/${project._id}`}>Details & Volunteer</Link>
-                    <hr className='line-two'></hr>
+                <div className="single-project-container" key={project._id}>
+                    <h1 className="project-title">{project.projectName.toUpperCase()}</h1>
+                    <h2 className="project-text">{project.projectLocation}</h2>
+                    <h3 className="project-text">{project.projectStartDate} - {project.projectEndDate}</h3>
+                    <hr className="line-two"></hr>
+                    <Link className="project-link" to={`/projects/${project._id}`}>Details & Volunteer</Link>
+                    <hr className="line-two"></hr>
                 </div>
-              )
-          })
-          }
+            )
+        })
+        }
       </>
     )
 }

@@ -1,8 +1,8 @@
-import React from "react";
-import EditEvent from "../pagesAdmin/EditEvent";
+import React from 'react'
+import EditEvent from '../pagesAdmin/EditEvent'
  
 const PopupEditEvent = props => {
-    console.log("props", props)
+    
   return (
     <div className="popup-box">
       <div className="box">

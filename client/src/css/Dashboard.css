@@ -18,7 +18,7 @@
     justify-content: center;
     text-align: center;
 }
-.dash-title-box{
+.dash-title-box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -71,7 +71,7 @@
     flex-direction: column;
     margin: 10px 0px;
 }
-.dash-btn{
+.dash-btn {
     display: inline-block ;
     padding: 0.2em 1.45em;
     margin:0.1em;
@@ -84,7 +84,7 @@
     background-color: white;
     text-align:center;
 }
-.dash-btn:hover{
+.dash-btn:hover {
     border-color: hotpink;
     box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
 }
