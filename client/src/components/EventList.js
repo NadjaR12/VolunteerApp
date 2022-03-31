@@ -19,19 +19,15 @@ export default function EventList() {
     
     //get events from backend
     const getAllEvents =() => {
-
-      axios.get(`/api/events/`, {headers: {Authorization: `Bearer ${storedToken}`}})
+      axios.get('/api/events/', {headers: {Authorization: `Bearer ${storedToken}`}})
       .then(response => {
         console.log('response.data',response.data)
         setEvents(response.data)
       })
-      .catch(err => {console.log(err) })
+      .catch(err => {console.log(err)})
     }
-    
-   useEffect(() => {
-     getAllEvents()          
-    }, [])
-    
+
+   useEffect(() => {getAllEvents()}, [])
     
     return(
       <>
@@ -50,7 +46,7 @@ export default function EventList() {
           </div>
         </div>
         <div>
-          {events.map(event=>
+          {events.map(event =>
           <div className="dash-list-item" key={event._id}>
             <div className="dash-list-title">{event.eventName}</div>
             <div className="dash-btn-container">
