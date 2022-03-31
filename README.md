@@ -46,7 +46,7 @@ Here are listed all Events and Projects. You can create new Events and Projects,
 And here you also find the Applications of Volunteers.
 You have two opprtunities:
 1. You can see all Applications for a specific Project
-2. You can see ALL Applications that have been send
+2. You can see ALL Applications that have been send and query through them
 
 This is very useful, because in the end you have a database with people wanting to work with you and offering there skills and 
 can hopefully save a lot of time and nerves finding the right people for the right job!
