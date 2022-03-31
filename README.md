@@ -35,7 +35,7 @@ The Application-Form can be filled out with personal data and send to apply for 
 THE ADMINS VIEW
 
 BEHIND-THE-SCENCES ("/behind-the-scences")
-Here is where the projects and events get born. If you navigate to /behind-the-scences without being logged in,
+Here is where the projects and events are born. If you navigate to /behind-the-scences without being logged in,
 you will be redirected to "/behind-the-scences/login". If you haven't registered yet you can do so by signing up at "/behind-the-scences/signup".
 (For now it is avoided through a "secret" path that people randomly sign up, this will be changed later on to a more secure way.)
 
