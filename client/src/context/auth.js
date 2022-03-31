@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
-
-
-const API_URL='https://collective-app-2.herokuapp.com';
+const API_URL='https://volunteer-project-rs.herokuapp.com';
 const AuthContext = React.createContext()
 
 function AuthProviderWrapper(props) {
@@ -28,8 +26,6 @@ function AuthProviderWrapper(props) {
 		setIsLoggedIn(false)
 		setAdmin(null)
 	}
-
-
 
 	const authenticateAdmin = () => {
 		// check local storage
@@ -70,6 +66,4 @@ function AuthProviderWrapper(props) {
 	)
 }
 
-
 export { AuthProviderWrapper, AuthContext }
-

@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import 'animate.css'
 import './App.css';
 import './css/Home.css';
-import './css/NavbarVisitor.css';
+import './css/Navbar.css';
 import './css/ProjectListVisitor.css';
 import './css/Login.css';
 import './css/EventsVisitors.css'

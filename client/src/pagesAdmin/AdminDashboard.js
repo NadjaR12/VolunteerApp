@@ -7,24 +7,20 @@ import { Link } from 'react-router-dom'
 export default function AdminDashboard() {
 
   return (
+    <>
+        <NavbarAdmin />
         <div className='dashboard-container'>
+            <div className='heading-admin-container'>Welcome to your Dashboard!</div>
             <div>
-                <NavbarAdmin />
-            </div>
-            <div className='heading-admin-container'></div>
-            <div>
-                <div className='volunteer-link-container'>    
-                    <Link className='nav-link' to={'/behind-the-scences/volunteers/fullList'}>Full Volunteer Database</Link>               
-                </div>
-                <div>
-                    <div>    
-                        <ProjectList />
-                    </div>
-                    <div>
-                        <EventList />
-                    </div>
+                <div className='dashboard-list-container'> 
+                    <div className='full-vol-link-container border-radius'>
+                        <Link className='nav-link' to={'/behind-the-scences/volunteers/fullList'}>Full Volunteer Database</Link>               
+                    </div>   
+                    <ProjectList />
+                    <EventList />
                 </div>
             </div>
         </div>
+    </>
   )
 }

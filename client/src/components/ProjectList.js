@@ -72,6 +72,7 @@ useEffect(() => {getAllProjects()}, [])
                   </div>
                 </div>
                 <div className="vol-link-container">
+                  <img className="map-icon" src='/images/side-arrow.png' alt='arrow'/>
                   <Link className="vol-link-dash" to={`/behind-the-scences/project/volunteer/${project._id}`}>See Applications</Link>
                 </div>
               </>
