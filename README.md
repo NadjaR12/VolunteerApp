@@ -1,4 +1,5 @@
 THE PROJECT IDEA
+
 I created this project out of my personal experience as part of a stage-building-collective. 
 Usually it was reallly hard to find people to work with that had specific skills and that had time and the will to volunteer 
 for a specific project.
@@ -13,7 +14,7 @@ GUIDE
 THE VISITORS VIEW
 
 HOME ("/")
-On the landing page you get an overview about the Collective, who they are, what the collective is about and what their work is about. 
+On the landing page you get an overview about the Collective, what the collective is about and what their work is about. 
 From here you can navigate to the PROJECTS and the EVENTS.
 
 EVENTS ("/events")
