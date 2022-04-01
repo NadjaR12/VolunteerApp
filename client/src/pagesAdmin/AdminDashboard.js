@@ -13,7 +13,7 @@ export default function AdminDashboard() {
             <div className='heading-admin-container'>Welcome to your Dashboard!</div>
             <div>
                 <div className='dashboard-list-container'> 
-                    <div className='full-vol-link-container border-radius'>
+                    <div className='full-vol-link-container'>
                         <Link className='nav-link' to={'/behind-the-scences/volunteers/fullList'}>Full Volunteer Database</Link>               
                     </div>   
                     <ProjectList />

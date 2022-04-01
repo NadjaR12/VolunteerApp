@@ -18,8 +18,8 @@ export default function EventsVisitors() {
 
     const storedToken = localStorage.getItem('authToken')
 
-    const getAllEvents =() => {
-        axios.get('/api/events', {headers: {Authorization: `Bearer ${storedToken}`}})
+    const getAllEvents = () => {
+        axios.get('/api/events/', {headers: {Authorization: `Bearer ${storedToken}`}})
         .then(response => {
             console.log('response.data', response.data)
             setEvents(response.data)
