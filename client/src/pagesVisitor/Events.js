@@ -8,7 +8,7 @@ import ToggleEvent from '../components/ToggleEvent'
 import TypeFilterEvent from '../components/TypeFilterEvent'
 
 
-export default function EventsVisitors() {
+export default function Events() {
 
     const [events, setEvents] = useState(null)
     const [query, setQuery] = useState('')
