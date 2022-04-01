@@ -19,7 +19,6 @@ const storedToken = localStorage.getItem('authToken')
 			})
 			.catch(err => console.log(err))
 	}, [])
-	console.log(project)
 
 	return (
 	<>
