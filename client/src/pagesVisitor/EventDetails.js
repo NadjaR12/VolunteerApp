@@ -5,8 +5,7 @@ import NavbarVisitor from '../components/NavbarVisitor'
 
 export default function EventDetails() {
 
-	const [event, setEvent] = useState(null);
-	
+	const [event, setEvent] = useState(null)
 	const { id } = useParams()
 
 	useEffect(() => {

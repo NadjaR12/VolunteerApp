@@ -18,15 +18,14 @@ export default function EventList() {
     }
     
     //get events from backend
-    const getAllEvents =() => {
-      axios.get('/api/events/', {headers: {Authorization: `Bearer ${storedToken}`}})
+    const getAllEvents = () => {
+      axios.get('/api/events', {headers: {Authorization: `Bearer ${storedToken}`}})
       .then(response => {
         console.log('response.data',response.data)
         setEvents(response.data)
       })
       .catch(err => {console.log(err)})
     }
-
    useEffect(() => {getAllEvents()}, [])
     
     return(
