@@ -46,16 +46,16 @@ const storedToken = localStorage.getItem('authToken')
 					<h4><img className="map-icon" src="/images/placeholder.png" alt=""/>{project.projectLocation}</h4>
 					<h5>{project.projectStartDate}  -  {project.projectEndDate}</h5>
 					<h4>What the project is about: </h4>
-					<p>{project.projectDescription}</p>
+					<p className="project-text-container">{project.projectDescription}</p>
 					<h4>Looking for:</h4>
-					<p>{project.projectSkillsNeeded}</p>
+					<p className="project-text-container">{project.projectSkillsNeeded}</p>
 				</div>
 				<hr className="line"></hr>
 				<div className="click-volunteer-container">
 					<h4 className="project-text">Wanna Participate?</h4>
 					<h5 className="project-text">Click</h5>
 					<img className="arrow-icon" src="/images/down-arrow.png" alt="pfeil"/><br></br>
-					<Link className="project-link" to={`/volunteer/${project._id}`}>Volunteer</Link>
+					<Link className="project-detail-link" to={`/volunteer/${project._id}`}>Volunteer</Link>
 				</div>
 			</div>
 			</div>
