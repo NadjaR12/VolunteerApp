@@ -10,7 +10,7 @@ import TypeFilterEvent from '../components/TypeFilterEvent'
 
 export default function Events() {
 
-    const [events, setEvents] = useState(null)
+    const [events, setEvents] = useState([])
     const [query, setQuery] = useState('')
     const [eventDate ,setEventDate] = useState('')
     const [toggle, setToggle] = useState(false)
@@ -19,12 +19,14 @@ export default function Events() {
     const storedToken = localStorage.getItem('authToken')
 
     const getAllEvents = () => {
-        axios.get('/api/events/', {headers: {Authorization: `Bearer ${storedToken}`}})
+        axios.get('/api/events/', { headers: { Authorization: `Bearer ${storedToken}` } })
         .then(response => {
             console.log('response.data', response.data)
             setEvents(response.data)
         })
-       .catch(err => {console.log(err) })
+        .catch(err => {
+           console.log(err) 
+        })
    }
    useEffect(()=> {getAllEvents()}, [])
 
@@ -34,21 +36,21 @@ export default function Events() {
 
     let filteredEvents;
 
-    if(events){
+    if(events) {
         filteredEvents = events.filter(event => {
             return event.eventName.toLowerCase().includes(query)
     })}
-    if(events && eventDate){
+    if(events && eventDate) {
         filteredEvents = filteredEvents.filter(event => {
             return event.eventDate === eventDate
          })
     }
-    if(toggle){
+    if(toggle) {
         filteredEvents = filteredEvents.filter(event => {
             return event.eventOutdoor === true
         })
     }
-    if(type !== ''){
+    if(type !== '') {
         filteredEvents = filteredEvents.filter( event => {
             return event.eventType.toLowerCase() === type.toLowerCase()
        })
@@ -56,11 +58,11 @@ export default function Events() {
    
     return(
     <>
-    {events === null ? <div>Loading ...</div> :
+    {events === [] ? <div>Loading ...</div> :
         <>
             <NavbarVisitor />
             <div className="heading-project-container">
-            <h1>UPCOMING EVENTS</h1>
+                <h1>UPCOMING EVENTS</h1>
             </div>
             <div className="event-page-container bg-overlay-event">
                 {/* Filter Box */}
@@ -86,7 +88,8 @@ export default function Events() {
                             <hr className="hr"></hr>
                         </div>
                     )
-                    })} 
+                })
+                } 
                 </div>
             </div>
         </>

@@ -11,6 +11,7 @@ export default function Home() {
 
   return (
   <>
+  <h1>test</h1>
     <div className="home-container fixed-background">
     <div className="home-overlay fixed-background">
       <div className="logo-container">
