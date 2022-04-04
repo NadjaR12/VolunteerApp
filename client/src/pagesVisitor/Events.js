@@ -28,7 +28,7 @@ export default function Events() {
            console.log(err) 
         })
    }
-   useEffect(()=> {getAllEvents()}, [])
+   useEffect(() => {getAllEvents()}, [])
 
    const handleClean = () => {
        setEventDate('')
@@ -51,7 +51,7 @@ export default function Events() {
         })
     }
     if(type !== '') {
-        filteredEvents = filteredEvents.filter( event => {
+        filteredEvents = filteredEvents.filter(event => {
             return event.eventType.toLowerCase() === type.toLowerCase()
        })
     }

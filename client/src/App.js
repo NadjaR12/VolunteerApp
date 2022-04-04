@@ -1,10 +1,11 @@
+import React from 'react';
 import { Routes, Route } from 'react-router-dom'
 import 'animate.css'
-import './App.css';
-import './css/Home.css';
-import './css/Navbar.css';
-import './css/ProjectListVisitor.css';
-import './css/Login.css';
+import './App.css'
+import './css/Home.css'
+import './css/Navbar.css'
+import './css/ProjectListVisitor.css'
+import './css/Login.css'
 import './css/EventsVisitors.css'
 import './css/ProjectDetails.css'
 import './css/Dashboard.css'
@@ -17,16 +18,16 @@ import Home from './pagesVisitor/Home'
 import Projects from './pagesVisitor/Projects'
 import ProjectDetails from './pagesVisitor/ProjectDetails'
 import Events from './pagesVisitor/Events'
+import EventDetails from './pagesVisitor/EventDetails'
 import Volunteer from './pagesVisitor/Volunteer'
-import AdminDashboard from './pagesAdmin/AdminDashboard';
-import EditProject from './pagesAdmin/EditProject';
-import ProjectVolunteerList from './pagesAdmin/ProjectVolunteerList';
-import VolunteersFullList from './pagesAdmin/VolunteersFullList';
-import EditEvent from './pagesAdmin/EditEvent';
+import AdminDashboard from './pagesAdmin/AdminDashboard'
+import EditProject from './pagesAdmin/EditProject'
+import EditEvent from './pagesAdmin/EditEvent'
+import ProjectVolunteerList from './pagesAdmin/ProjectVolunteerList'
+import VolunteersFullList from './pagesAdmin/VolunteersFullList'
 import Login from './pagesLog/Login'
-import Signup from './pagesLog/Signup';
-import IsPrivate from './components/IsPrivate';
-import EventDetails from './pagesVisitor/EventDetails';
+import Signup from './pagesLog/Signup'
+import IsPrivate from './components/IsPrivate'
 
 
 function App() {
